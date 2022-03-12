@@ -1,0 +1,18 @@
+{
+  "root": {
+    "rows": [
+      {
+        "column": [
+          {
+            "id": "intro",
+            "type": "section"
+          },
+          {
+            "id": "contact",
+            "type": "section"
+          }
+        ]
+      }
+    ]
+  }
+}
