@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const getPlugins = (argv) => {
   const plugins = [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html"),
+      template: "index.html",
     }),
   ];
 
@@ -67,7 +67,7 @@ module.exports = (env, argv) => {
       filename: "bundle.js",
     },
   };
-  config.module = getModules();
+  config.module = getModules(argv);
   config.devServer = getDevConfig();
   config.plugins = getPlugins(argv);
 
