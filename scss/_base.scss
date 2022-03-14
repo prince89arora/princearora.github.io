@@ -1,0 +1,13 @@
+@import "./vars";
+@import "./mixins/index";
+@import "./tokens/index";
+
+@import "./components/index";
+
+body {
+  background-color: $shade_1;
+}
+
+.app {
+  padding-top: $space_lg;
+}

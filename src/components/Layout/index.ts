@@ -1,3 +1,3 @@
-import PageLayout from "./PageLayout";
+import PageLayout from "./PageLayout.jsx";
 
-export default PageLayout;
+export { PageLayout };

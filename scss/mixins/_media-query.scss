@@ -1,0 +1,23 @@
+@mixin for-size-and-below($size) {
+  @if $size == "xl" {
+    @media screen and (max-width: $screen-xl) {
+      @content;
+    }
+  } @else if $size == "lg" {
+    @media screen and (max-width: $screen-lg) {
+      @content;
+    }
+  } @else if $size == "md" {
+    @media screen and (max-width: $screen-md) {
+      @content;
+    }
+  } @else if $size == "sm" {
+    @media screen and (max-width: $screen-sm) {
+      @content;
+    }
+  } @else if $size == "xs" {
+    @media screen and (max-width: $screen-xs) {
+      @content;
+    }
+  }
+}

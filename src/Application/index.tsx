@@ -1,12 +1,15 @@
 import * as React from "react";
-import "./app.scss";
-import PageLayout from "../components/Layout";
-import * as layoutConfig from "./layout-config.json";
+import { PageLayout } from "../components/Layout";
+import ApplicationContextProvider from "../context/ApplicationContextProvider";
 
 export const Application = () => {
   return (
-    <div className="app">
-      <PageLayout />
-    </div>
+    <ApplicationContextProvider>
+      <div className="app">
+        <>
+          <PageLayout />
+        </>
+      </div>
+    </ApplicationContextProvider>
   );
 };
