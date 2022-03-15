@@ -3,5 +3,9 @@
     "firstname": "Prince",
     "lastname": "Arora",
     "dob": "04-12-1989"
+  },
+  "contact": {
+    "email": "prnc.arora0@gmail.com",
+    "phone": "+91 8745031662"
   }
 }

@@ -1,17 +1,22 @@
 import * as React from "react";
-import { ApplicationContext } from "../../../context/ApplicationContextProvider";
+import { useApplicationContext } from "../../../context";
 import { Card } from "../../partials";
+import Contact from "./Contact";
+import Personal from "./Personal";
+import ProfileImage from "./ProfileImage";
 
 const Introduction = () => {
-  const { introduction } = React.useContext(ApplicationContext);
+  const { introduction } = useApplicationContext();
 
   return (
     <>
       {introduction && (
         <Card>
-          <p>
-            {introduction.personal.firstname} {introduction.personal.lastname}
-          </p>
+          <div className="introduction">
+            <ProfileImage />
+            <Personal />
+            <Contact />
+          </div>
         </Card>
       )}
     </>

@@ -18,6 +18,9 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.13",
@@ -29,6 +32,7 @@
     "eslint-plugin-react": "^7.29.3",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "lint-staged": "^12.3.5",
     "mini-css-extract-plugin": "^2.6.0",
     "prettier": "^2.5.1",
@@ -48,7 +52,9 @@
     "lint:fix": "eslint src/* --fix",
     "lint:quiet": "eslint src/* --quiet",
     "prettier": "prettier --write ./src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest src/",
+    "test:silent": "jest src/ --silent"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

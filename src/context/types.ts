@@ -3,9 +3,14 @@ export type PersonalInformation = {
   lastname: string;
   dob: string;
 };
+export type ContactInformation = {
+  email: string;
+  phone: string;
+};
 
 export type Introduction = {
   personal?: PersonalInformation;
+  contact?: ContactInformation;
 };
 
 export type ApplicationContextType = {
