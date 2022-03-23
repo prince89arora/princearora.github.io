@@ -17,6 +17,7 @@ describe("Introduction", () => {
               firstname: "FirstName",
               lastname: "LastName",
               dob: "date of birth",
+              position: "Full Stack",
             },
             contact: {
               email: "testmail@mail.com",

@@ -2,11 +2,14 @@ import * as React from "react";
 import { useApplicationContext } from "../../../context";
 import { PersonalInformation } from "../../../context/types";
 
-const Html = ({ firstname, lastname }: PersonalInformation) => (
+const Html = ({ firstname, lastname, position }: PersonalInformation) => (
   <div className="introduction__personal">
-    <h3>
-      {firstname} {lastname}
-    </h3>
+    <div className="introduction__personal__title">
+      <h1>
+        {firstname} {lastname}
+      </h1>
+      <h3>{position}</h3>
+    </div>
   </div>
 );
 

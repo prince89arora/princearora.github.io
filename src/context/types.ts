@@ -2,6 +2,7 @@ export type PersonalInformation = {
   firstname: string;
   lastname: string;
   dob: string;
+  position: string;
 };
 export type ContactInformation = {
   email: string;

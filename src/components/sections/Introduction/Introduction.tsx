@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useApplicationContext } from "../../../context";
-import { Card } from "../../partials";
-import Contact from "./Contact";
+import Heading from "./Heading";
 import Personal from "./Personal";
 import ProfileImage from "./ProfileImage";
 
@@ -11,13 +10,12 @@ const Introduction = () => {
   return (
     <>
       {introduction && (
-        <Card>
-          <div className="introduction">
-            <ProfileImage />
-            <Personal />
-            <Contact />
-          </div>
-        </Card>
+        <div className="introduction">
+          <ProfileImage />
+          <Heading />
+          {/* <Personal /> */}
+          {/* <Contact /> */}
+        </div>
       )}
     </>
   );

@@ -2,7 +2,8 @@
   "personal": {
     "firstname": "Prince",
     "lastname": "Arora",
-    "dob": "04-12-1989"
+    "dob": "04-12-1989",
+    "position": "Full Stack Engineer"
   },
   "contact": {
     "email": "prnc.arora0@gmail.com",

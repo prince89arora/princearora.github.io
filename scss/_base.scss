@@ -4,10 +4,4 @@
 
 @import "./components/index";
 
-body {
-  background-color: $shade_1;
-}
-
-.app {
-  padding-top: $space_lg;
-}
+@import "texonomy";
