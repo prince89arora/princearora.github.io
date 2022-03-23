@@ -1,5 +1,13 @@
-$screen-xl: 1200px;
-$screen-lg: 1024px;
-$screen-md: 900px;
-$screen-sm: 768px;
-$screen-xs: 600px;
+@use "./mixins/media-query";
+
+:root {
+  --space_unit: 1rem;
+  --font_unit: 1rem;
+}
+
+@include medium() {
+  :root {
+    --space_unit: 1.125rem;
+    --font_unit: 0.8rem;
+  }
+}

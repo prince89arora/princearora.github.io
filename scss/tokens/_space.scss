@@ -1,12 +1,4 @@
-:root {
-  --space_unit: 1rem;
-}
-
-@include for-size-and-below("md") {
-  :root {
-    --space_unit: 1.125rem;
-  }
-}
+@use "./../mixins/media-query";
 
 $space_xxs: calc(var(--space_unit) * 0.1);
 $space_xs: calc(var(--space_unit) * 0.2);

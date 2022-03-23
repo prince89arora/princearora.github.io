@@ -3,6 +3,7 @@ export type PersonalInformation = {
   lastname: string;
   dob: string;
   position: string;
+  address?: string;
 };
 export type ContactInformation = {
   email: string;
@@ -10,6 +11,7 @@ export type ContactInformation = {
 };
 
 export type Introduction = {
+  summary?: string;
   personal?: PersonalInformation;
   contact?: ContactInformation;
 };

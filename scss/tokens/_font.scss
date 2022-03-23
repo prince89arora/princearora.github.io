@@ -1,5 +1,7 @@
 $font_family: "Red Hat Mono", monospace;
 
-$font_xl: 700 2.5rem/3rem $font_family;
-$font_lg: 600 1.5rem/2rem $font_family;
-$font_md: 500 1rem/1.5rem $font_family;
+$font_xl: 700 calc(var(--font_unit) * 2.5) / 3rem $font_family;
+$font_lg: 600 calc(var(--font_unit) * 1.5) / 2rem $font_family;
+$font_md: 500 calc(var(--font_unit) * 1) / 1.5rem $font_family;
+
+$font_normal: 400 calc(var(--font_unit) * 1) / 1rem $font_family;

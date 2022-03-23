@@ -1,7 +1,6 @@
+@import "./mixins/media-query";
 @import "./vars";
-@import "./mixins/index";
 @import "./tokens/index";
 
-@import "./components/index";
-
 @import "texonomy";
+@import "./components/index";

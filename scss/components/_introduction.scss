@@ -1,32 +1,97 @@
+@use "../mixins/media-query";
+
 .introduction {
   width: 100%;
   position: relative;
   display: flex;
+  @include tablet() {
+    flex-direction: column;
+  }
 
   &__image {
     width: 30%;
+    position: relative;
+    @include tablet() {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  &__heading {
+  &__moreinfo {
     width: 70%;
-    padding: $space_md $space_md $space_md $space_xxl;
-    background-color: $dark_1;
-    height: fit-content;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
-    &__name {
-      color: $shade_1;
+    @include tablet() {
+      width: 100%;
+    }
 
-      &::after {
-        content: "/";
+    &__heading {
+      padding: $space_md 0;
+      background-color: $dark_1;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__name {
+        color: $shade_1;
+
+        &::after {
+          content: "/";
+          margin-left: $space_md;
+        }
+      }
+
+      &__position {
+        color: $shade_2;
         margin-left: $space_md;
       }
     }
 
-    &__position {
-      color: $shade_2;
-      margin-left: $space_md;
+    &__personal {
+      color: $shade_1;
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      &__contact {
+        background-color: $dark_2;
+        width: 50%;
+        padding: $space_md 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .data-row {
+          margin-bottom: $space_sm;
+          justify-content: space-between;
+          display: flex;
+          justify-content: space-between;
+          width: 75%;
+
+          span {
+            &:last-child {
+              max-width: 200px;
+            }
+          }
+        }
+      }
+
+      &__summary {
+        background-color: $dark_3;
+        width: 50%;
+        padding: $space_md;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        text-justify: inter-word;
+      }
     }
   }
 }
