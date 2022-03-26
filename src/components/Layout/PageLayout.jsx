@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Introduction } from "../sections";
+import { Introduction, Navigation } from "../sections";
 
 const PageLayout = () => {
   return (
     <>
       <Introduction />
+      <Navigation />
     </>
   );
 };
