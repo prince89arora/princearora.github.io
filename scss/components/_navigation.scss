@@ -32,6 +32,8 @@
         color: $shade_1;
         font-weight: 500;
         position: relative;
+        display: flex;
+        align-items: center;
 
         span {
           position: relative;
@@ -44,11 +46,15 @@
             left: 0px;
             max-width: 0%;
             width: 0%;
-            bottom: 0px;
+            bottom: -5px;
             height: 3px;
             opacity: 0;
             transition: all 400ms ease;
           }
+        }
+
+        svg {
+          margin-right: $space_md;
         }
 
         &:hover {

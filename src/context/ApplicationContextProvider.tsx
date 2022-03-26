@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ApplicationContextType } from "./types";
 import * as introData from "../../data/introduction.json";
+import navConfig from "./NavigationConfig";
 
 export const ApplicationContext =
   React.createContext<ApplicationContextType>(null);
@@ -17,6 +18,7 @@ const ApplicationContextProvider = ({ children }: Props) => {
     <ApplicationContext.Provider
       value={{
         introduction: introduction,
+        navigation: navConfig,
       }}
     >
       {children}

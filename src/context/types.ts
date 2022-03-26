@@ -1,3 +1,5 @@
+import * as React from "react";
+
 export type PersonalInformation = {
   firstname: string;
   lastname: string;
@@ -16,6 +18,18 @@ export type Introduction = {
   contact?: ContactInformation;
 };
 
+export type NavigationItem = {
+  label: string;
+  screen?: string;
+  icon?: React.ReactElement;
+};
+
+export type NavigationConfig = {
+  iconSize: number;
+  items: Array<NavigationItem>;
+};
+
 export type ApplicationContextType = {
   introduction?: Introduction;
+  navigation?: NavigationConfig;
 };
