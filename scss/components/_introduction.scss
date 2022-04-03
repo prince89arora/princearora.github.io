@@ -13,6 +13,10 @@
     max-height: 400px;
   }
 
+  @include tablet() {
+    max-height: fit-content;
+  }
+
   &__image {
     width: 30%;
     position: relative;

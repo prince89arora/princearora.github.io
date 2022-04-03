@@ -3,22 +3,30 @@ import { ApplicationContextType } from "./types";
 import * as introData from "../../data/introduction.json";
 import navConfig from "./NavigationConfig";
 
-export const ApplicationContext =
-  React.createContext<ApplicationContextType>(null);
+export const ApplicationContext = React.createContext<ApplicationContextType>(
+  {}
+);
 
 export type Props = {
   children: React.ReactNode;
 };
 
 const ApplicationContextProvider = ({ children }: Props) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [introduction, setIntroduction] = React.useState(introData || {});
+  const [activeNavigation, setActiveNavigation] = React.useState("");
+
+  const changeNav = (navId: string) => {
+    console.log(navId);
+
+    setActiveNavigation(() => navId);
+  };
 
   return (
     <ApplicationContext.Provider
       value={{
-        introduction: introduction,
+        introduction: introData,
         navigation: navConfig,
+        activeNavigation,
+        changeNav,
       }}
     >
       {children}

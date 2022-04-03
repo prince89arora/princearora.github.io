@@ -5,17 +5,17 @@ const iconSize = 20;
 const items = [
   {
     label: "Skills",
-    screen: "",
+    screen: "skills",
     icon: <Tools size={iconSize} />,
   },
   {
     label: "Experience",
-    screen: "",
+    screen: "experience",
     icon: <Briefcase size={iconSize} />,
   },
   {
     label: "About",
-    screen: "",
+    screen: "about",
     icon: <Person size={iconSize} />,
   },
 ];

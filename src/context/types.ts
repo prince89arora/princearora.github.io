@@ -32,4 +32,6 @@ export type NavigationConfig = {
 export type ApplicationContextType = {
   introduction?: Introduction;
   navigation?: NavigationConfig;
+  activeNavigation?: string;
+  changeNav?: (navid: string) => void;
 };
