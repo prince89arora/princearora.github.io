@@ -4,9 +4,9 @@ import { Introduction, Navigation, Content } from "../sections";
 const PageLayout = () => {
   return (
     <>
-      <Introduction />
-      <Navigation />
-      <Content />
+      <div className="row">
+        <Introduction />
+      </div>
     </>
   );
 };

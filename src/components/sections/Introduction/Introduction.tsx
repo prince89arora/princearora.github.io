@@ -11,13 +11,17 @@ const Introduction = () => {
     <>
       {introduction && (
         <div className="introduction">
-          <ProfileImage />
-          <div className="introduction__moreinfo">
-            <Heading />
-            <Personal />
+          <div className="row">
+            <div className="col-4">
+              <ProfileImage />
+            </div>
+            <div className="col-8">
+            <div className="introduction__moreinfo">
+              <Heading />
+              <Personal />
+            </div>
+            </div>
           </div>
-          {/* <Personal /> */}
-          {/* <Contact /> */}
         </div>
       )}
     </>

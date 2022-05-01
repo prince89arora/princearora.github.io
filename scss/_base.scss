@@ -4,3 +4,8 @@
 
 @import "texonomy";
 @import "./components/index";
+
+
+body {
+    transition: all 200ms ease-in-out;
+}
