@@ -3,9 +3,34 @@
 .introduction {
   width: 100%;
   display: flex;
-  background-color: $primary;
+  padding: $space_xxl;
+  position: relative;
 
+  &_container {
+    width: 100%;
+    overflow: visible;
+    background-color: $primary;
+    padding: $space_md;
+    border-radius: 1rem;
+    position: relative;
+    height: 115px;
+
+    &_image {
+     
+    }
+  }
   &__image {
-    padding: $space_xxl;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid $primary;
+    box-sizing: content-box;
+    position: absolute;
+    top: -1.5rem;
+
+    img {
+      width: 100%;
+    }
   }
 }

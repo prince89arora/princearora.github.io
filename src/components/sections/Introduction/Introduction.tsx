@@ -11,15 +11,17 @@ const Introduction = () => {
     <>
       {introduction && (
         <div className="introduction">
-          <div className="row">
-            <div className="col-4">
-              <ProfileImage />
-            </div>
-            <div className="col-8">
-            <div className="introduction__moreinfo">
-              <Heading />
-              <Personal />
-            </div>
+          <div className="introduction_container">
+            <div className="row">
+              <div className="col-2">
+                <ProfileImage />
+              </div>
+              <div className="col-6">
+                <Heading />
+              </div>
+              <div className="col-4">
+                <p>Contact information here..</p>
+              </div>
             </div>
           </div>
         </div>

@@ -40,7 +40,6 @@ const Personal = () => {
   return (
     <div className="introduction__moreinfo__personal">
       <Contact />
-      <Summary />
     </div>
   );
 };
