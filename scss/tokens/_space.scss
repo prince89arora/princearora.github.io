@@ -1,9 +1,0 @@
-@use "./../mixins/media-query";
-
-$space_xxs: calc(var(--space_unit) * 0.1);
-$space_xs: calc(var(--space_unit) * 0.2);
-$space_sm: calc(var(--space_unit) * 0.25);
-$space_md: calc(var(--space_unit) * 1);
-$space_lg: calc(var(--space_unit) * 2);
-$space_xl: calc(var(--space_unit) * 3);
-$space_xxl: calc(var(--space_unit) * 4);

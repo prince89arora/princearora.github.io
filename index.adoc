@@ -1,0 +1,5 @@
+:imagesdir: ./images
+:iconsdir: ./icons
+:size: A4
+:encode: UTF-8
+== Prince Arora
